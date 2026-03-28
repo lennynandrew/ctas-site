@@ -21,12 +21,22 @@ body {
 }
 
 .hero {
-    /* Match the double extension exactly */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("hero.png.png") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    height: 100vh !important;
-    display: flex !important;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("hero.png.png") !important;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* This makes it fill the whole screen */
+    display: flex;
+    flex-direction: column; /* Puts nav at top, text below it */
+    justify-content: space-between; 
+    color: white;
+}
+
+.hero-content {
+    flex-grow: 1; /* Pushes the text to the middle of the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cta-btn {
