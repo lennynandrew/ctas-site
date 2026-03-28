@@ -21,16 +21,12 @@ body {
 }
 
 .hero {
-    /* Since image and CSS are roommates in the CSS folder, we just use the name */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("hero.png");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
+    /* Match the double extension exactly */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("hero.png.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 100vh !important;
+    display: flex !important;
 }
 
 .cta-btn {
